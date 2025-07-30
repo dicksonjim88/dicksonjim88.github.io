@@ -143,8 +143,10 @@ nav ul li a:hover {
 /* Skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 10rem;
+    align-items: start;
 }
 
 .skill-category h3 {
