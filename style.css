@@ -147,6 +147,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 10rem;
     align-items: start;
+    margin-bottom: 3rem;
 }
 
 .skill-category h3 {
@@ -180,6 +181,7 @@ nav ul li a:hover {
     align-items: center;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 3rem;
 }
 
 .project-card:hover {
@@ -257,10 +259,52 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+/* New Form Styles */
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group-split {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column on mobile */
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Make Name and Email side-by-side on larger screens */
+@media (min-width: 768px) {
+    .form-group-split {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.form-group-full {
+    margin-bottom: 1.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    background-color: var(--card-bg-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 91, 153, 0.2); /* Using your blue accent color */
+}
+
+#contact-form button {
+    width: 100%;
+    /* The .btn class already styles this well */
 }
 
 
