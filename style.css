@@ -129,6 +129,11 @@ nav ul li a:hover {
     max-height: 400px;
 }
 
+/* Add this new rule for paragraph spacing */
+.about-text p:not(:last-child) {
+    margin-bottom: 1rem; /* 1rem is typically 16px */
+}
+
 
 /* Skills */
 .skills-grid {
