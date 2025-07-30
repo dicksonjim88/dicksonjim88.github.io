@@ -123,10 +123,10 @@ nav ul li a:hover {
 
 .about-image {
     width: 100%;
-    height: auto;
+    height: 475px;
     border-radius: 8px;
     object-fit: cover;
-    max-height: 400px;
+    margin-bottom: 6rem;
 }
 
 /* Add this new rule for paragraph spacing */
@@ -260,6 +260,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 1rem;
 }
+
 
 /* 4. FOOTER */
 footer {
