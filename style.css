@@ -131,16 +131,13 @@ nav ul li a:hover {
 
 /* Add this new rule for paragraph spacing */
 .about-text p:not(:last-child) {
-    margin-bottom: 1rem; /* 1rem is typically 16px */
-}
-
-.about-text p:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem; /* 1rem is typically 16px */
 }
 
 /* Justified Text Alignment for About section */
 .about-text p {
     text-align: justify;
+    margin-bottom: 6rem;
 }
 
 /* Skills */
