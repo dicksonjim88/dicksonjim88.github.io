@@ -134,6 +134,14 @@ nav ul li a:hover {
     margin-bottom: 1rem; /* 1rem is typically 16px */
 }
 
+.about-text p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Justified Text Alignment for About section */
+.about-text p {
+    text-align: justify;
+}
 
 /* Skills */
 .skills-grid {
